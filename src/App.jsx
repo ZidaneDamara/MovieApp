@@ -54,12 +54,7 @@ const App = () => {
   return (
     <div className="bg-gradient-to-b from-mainColor to-thirdColor text-white min-h-screen">
       {/* Header and Search */}
-      <div className="flex flex-col sm:flex-row justify-between items-center py-6 px-10 shadow-lg">
-        <Header title="NexusHub." />
-        <Search onSearch={handleSearch} />
-      </div>
-
-      {/* Movie Grid */}
+      <Header title="NexusHub." handleSearch={handleSearch} />
       <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1 gap-7 p-10">
         {movies.length > 0 ? (
           movies.map((movie) => <Movie key={movie.imdbID} movie={movie} />)

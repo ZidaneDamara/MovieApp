@@ -10,7 +10,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex">
+    <form onSubmit={handleSubmit} className="flex text-slate-700">
       <input
         type="text"
         value={input}
